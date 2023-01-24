@@ -2,7 +2,9 @@
 
 ![License - Unlicense](https://img.shields.io/static/v1?label=License&message=Unlicense&color=blue&style=plastic)
 
-A nodejs script to generate a readme document automaticly
+A node.js script to generate a readme document automaticly
+
+![image](https://user-images.githubusercontent.com/48780301/214205260-f1278dbc-ea1e-47c5-893f-641685ddcc5e.png)
 
 ## Table of Contents
 
