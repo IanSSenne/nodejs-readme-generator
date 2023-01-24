@@ -4,6 +4,7 @@ const fs = require("fs/promises");
 const axios = require("axios");
 const MDDocument = require("./utils/generateMarkdown");
 
+let target = process.argv[2] || "README.md"
 // [x]TODO: Create an array of questions for user input
 const questions = [
 	{
@@ -96,7 +97,7 @@ async function init() {
 	md.header("License", 2);
 	md.p(MDDocument.bold(response.repo.license.name));
 	md.code(licenseMeta);
-	writeToFile("README.md", md.toString());
+	writeToFile(target, md.toString());
 }
 
 // Function call to initialize app
